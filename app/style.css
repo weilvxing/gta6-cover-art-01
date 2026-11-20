@@ -1,0 +1,23 @@
+html, body { margin: 0; min-height: 100%; background: #0d0a14; color: #f4f1f8; font: 15px/1.45 system-ui, sans-serif; }
+.app { display: flex; gap: 28px; align-items: flex-start; justify-content: center; min-height: 100vh; padding: 24px; box-sizing: border-box; }
+.controls { display: flex; flex-direction: column; gap: 16px; width: 300px; flex: none; }
+.controls h1 { margin: 0; font-size: 30px; letter-spacing: 0.5px; color: #ffb347; }
+.controls > p { margin: 0; color: #b9b2c7; }
+fieldset { border: 1px solid #3a3348; border-radius: 10px; padding: 12px; margin: 0; }
+legend { font-weight: 700; padding: 0 6px; color: #e8e2f2; }
+label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+input[type=text], select { font: inherit; padding: 9px; border: 1px solid #4a4258; border-radius: 6px; background: #1a1426; color: #f4f1f8; }
+input[type=file] { font: inherit; margin-top: 4px; }
+.file { cursor: pointer; }
+.choices { display: flex; gap: 14px; flex-wrap: wrap; }
+.choices label { flex-direction: row; align-items: center; gap: 6px; font-weight: 500; cursor: pointer; }
+.samples { display: flex; gap: 10px; margin-top: 10px; }
+.sample { font: inherit; padding: 6px; border: 2px solid transparent; border-radius: 8px; background: #1a1426; color: #f4f1f8; cursor: pointer; }
+.sample img { display: block; width: 96px; height: 72px; object-fit: cover; border-radius: 4px; }
+.sample.active { border-color: #ff2e88; }
+button#export { font: inherit; font-weight: 800; padding: 12px; border: 0; border-radius: 8px; background: linear-gradient(90deg, #ff5e7a, #ff2e88); color: #fff; cursor: pointer; }
+#status { margin: 0; min-height: 1.2em; color: #9fd8cf; }
+canvas { width: min(62vh, 52vw); height: auto; box-shadow: 0 12px 44px rgba(0, 0, 0, 0.55); background: #1a0b2e; }
+body.shot-cover .controls { display: none; }
+body.shot-cover .app { padding: 0; }
+body.shot-cover canvas { width: 100vw; height: 100vh; object-fit: contain; box-shadow: none; }

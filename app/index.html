@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Cover Maker — GTA-style cover art</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="app">
+  <section class="controls">
+    <h1>Vice Cover Maker</h1>
+    <p>Turn a photo into GTA-style multi-panel cover art. Original design — no Rockstar logos, artwork or fonts.</p>
+
+    <fieldset>
+      <legend>Photo</legend>
+      <label class="file">Upload your photo
+        <input id="photo" type="file" accept="image/*">
+      </label>
+      <div class="samples">
+        <button type="button" class="sample" data-src="samples/pier.jpg">
+          <img src="samples/pier.jpg" alt="Pier at sunset sample photo">Pier
+        </button>
+        <button type="button" class="sample" data-src="samples/boulevard.jpg">
+          <img src="samples/boulevard.jpg" alt="Boulevard sample photo">Boulevard
+        </button>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Words</legend>
+      <label>Title <input id="title" type="text" maxlength="24" value="Vice City"></label>
+      <label>Tagline <input id="tagline" type="text" maxlength="40" value="Welcome to Leonida"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Layout</legend>
+      <div class="choices">
+        <label><input type="radio" name="layout" value="poster" checked> Poster</label>
+        <label><input type="radio" name="layout" value="split"> Split</label>
+        <label><input type="radio" name="layout" value="strip"> Strip</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Colour grade</legend>
+      <div class="choices">
+        <label><input type="radio" name="grade" value="sunset" checked> Sunset</label>
+        <label><input type="radio" name="grade" value="neon"> Neon</label>
+        <label><input type="radio" name="grade" value="noir"> Noir</label>
+      </div>
+    </fieldset>
+
+    <label>Export size
+      <select id="size">
+        <option value="portrait" selected>1080 x 1350 (poster)</option>
+        <option value="square">1080 x 1080 (square)</option>
+      </select>
+    </label>
+
+    <button id="export" type="button">Export PNG cover</button>
+    <p id="status" role="status"></p>
+  </section>
+  <canvas id="cover" width="1080" height="1350" aria-label="The cover"></canvas>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
