@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/gta6-cover-art-01/weilvxing/gta6-cover-art-01/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 [![reward](https://make.fun/badge/gta6-cover-art-01/weilvxing/gta6-cover-art-01/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 
-Turn a photo into GTA-style multi-panel cover art, in your browser, offline. Upload your own photo (or use one of the two built-in samples), type a title and tagline, pick a poster layout — Poster, Split or Strip — and a colour grade — Sunset, Neon or Noir — then export a 1080 x 1350 or 1080 x 1080 PNG to share. Original design: no Rockstar logos, artwork or fonts; the lettering is plain system sans-serif drawn by the app.
+Turn a photo into GTA-style multi-panel cover art, in your browser, offline. Upload your own photo (or use one of the two built-in samples), type a title and tagline, pick a poster layout — Poster, Split or Strip — and a colour grade — Sunset, Neon or Noir — then export a 1080 x 1350 or 1080 x 1080 PNG to share. "Surprise me" rolls a random layout, grade, sample photo and title, and the exported file is named after the title. Original design: no Rockstar logos, artwork or fonts; the lettering is plain system sans-serif drawn by the app.
 
 ## Run it
 

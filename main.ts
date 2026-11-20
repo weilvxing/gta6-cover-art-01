@@ -7,10 +7,11 @@
 //
 // The app itself: pick a photo (upload or one of the two model-made samples),
 // type a title and tagline, choose a multi-panel layout (poster, split, strip)
-// and a colour grade (sunset, neon, noir), and export a 1080 x 1350 or
-// 1080 x 1080 PNG. Its two sample photos (app/samples/) were made for make.fun
-// with an image model and are free to use. No Rockstar logo, artwork or font
-// is used anywhere; the lettering is plain system sans-serif drawn by the app.
+// and a colour grade (sunset, neon, noir), or hit "Surprise me" for a random
+// look, and export a 1080 x 1350 or 1080 x 1080 PNG named after the title.
+// Its two sample photos (app/samples/) were made for make.fun with an image
+// model and are free to use. No Rockstar logo, artwork or font is used
+// anywhere; the lettering is plain system sans-serif drawn by the app.
 //
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
