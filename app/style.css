@@ -16,6 +16,9 @@ input[type=file] { font: inherit; margin-top: 4px; }
 .sample img { display: block; width: 96px; height: 72px; object-fit: cover; border-radius: 4px; }
 .sample.active { border-color: #ff2e88; }
 button#export { font: inherit; font-weight: 800; padding: 12px; border: 0; border-radius: 8px; background: linear-gradient(90deg, #ff5e7a, #ff2e88); color: #fff; cursor: pointer; }
+button#randomize { font: inherit; font-weight: 700; padding: 11px; border: 2px solid #ff2e88; border-radius: 8px; background: transparent; color: #ffb3cd; cursor: pointer; }
+button#randomize:hover { background: rgba(255, 46, 136, 0.14); }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #7df9ff; outline-offset: 2px; }
 #status { margin: 0; min-height: 1.2em; color: #9fd8cf; }
 canvas { width: min(62vh, 52vw); height: auto; box-shadow: 0 12px 44px rgba(0, 0, 0, 0.55); background: #1a0b2e; }
 body.shot-cover .controls { display: none; }
