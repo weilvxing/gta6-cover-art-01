@@ -1,6 +1,7 @@
-// Fixed scenes for screenshots: ?shot=editor shows the page with a sample photo;
-// ?shot=cover shows the cover alone. `photo` picks the sample (samples/<photo>.jpg),
-// `title` and `tagline` the words, `layout`, `grade` and `size` the look.
+// Fixed scenes for screenshots: ?shot=editor shows the page with a sample photo
+// (including the Surprise me button); ?shot=cover shows the cover alone.
+// `photo` picks the sample (samples/<photo>.jpg), `title` and `tagline` the
+// words, `layout`, `grade` and `size` the look.
 // window.__shotReady is set once painted.
 export async function runShot(shot, query, load) {
   if (shot === 'cover') document.body.classList.add('shot-cover');

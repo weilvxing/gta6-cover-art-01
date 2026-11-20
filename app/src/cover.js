@@ -116,8 +116,10 @@ function drawBadge(ctx, x, y, r, label, accent) {
  * Draws the whole cover.
  * `opts`: { photo, title, tagline, layout ('poster' | 'split' | 'strip'),
  *   grade ('sunset' | 'neon' | 'noir') }. The canvas size is the export size.
+ * A zero-size canvas draws nothing (the editor sizes it before the first draw).
  */
 export function drawCover(canvas, opts) {
+  if (canvas.width === 0 || canvas.height === 0) return;
   const ctx = canvas.getContext('2d');
   const { width: W, height: H } = canvas;
   const grade = GRADES[opts.grade] ?? GRADES.sunset;
